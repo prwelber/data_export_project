@@ -1,0 +1,2265 @@
+{
+    "data": [
+        {
+            "targetingsentencelines": {
+                "targetingsentencelines": [
+                    {
+                        "content": "Location:",
+                        "children": [
+                            "United States"
+                        ]
+                    },
+                    {
+                        "content": "Age:",
+                        "children": [
+                            "21 - 65+"
+                        ]
+                    },
+                    {
+                        "content": "Placements:",
+                        "children": [
+                            "Instagram Feed"
+                        ]
+                    }
+                ],
+                "id": "/targetingsentencelines"
+            },
+            "name": "instagram test",
+            "start_time": "2015-08-31T15:36:00-0700",
+            "targeting": {
+                "age_max": 65,
+                "page_types": [
+                    "instagramstream"
+                ],
+                "age_min": 21,
+                "geo_locations": {
+                    "countries": [
+                        "US"
+                    ],
+                    "location_types": [
+                        "home",
+                        "recent"
+                    ]
+                }
+            },
+            "end_time": "2015-09-30T04:00:00-0700",
+            "id": "6029031820089"
+        },
+        {
+            "targetingsentencelines": {
+                "targetingsentencelines": [
+                    {
+                        "content": "Custom Audience:",
+                        "children": [
+                            "Clos du Bois Emails"
+                        ]
+                    },
+                    {
+                        "content": "Location:",
+                        "children": [
+                            "United States: Alaska; Colorado; Hawaii; Idaho; Montana; Nevada; New Mexico; Oregon; Texas; Washington; Wyoming"
+                        ]
+                    },
+                    {
+                        "content": "Age:",
+                        "children": [
+                            "21 - 65+"
+                        ]
+                    },
+                    {
+                        "content": "Placements:",
+                        "children": [
+                            "News Feed on desktop computers or News Feed on mobile devices"
+                        ]
+                    }
+                ],
+                "id": "/targetingsentencelines"
+            },
+            "name": "RMW Direct Sales - West - Emails",
+            "insights": {
+                "data": [
+                    {
+                        "spend": 11.17,
+                        "date_start": "2014-12-09",
+                        "date_stop": "2014-12-17"
+                    }
+                ],
+                "paging": {
+                    "cursors": {
+                        "before": "MAZDZD",
+                        "after": "MAZDZD"
+                    }
+                }
+            },
+            "start_time": "2014-12-09T00:00:00-0800",
+            "targeting": {
+                "page_types": [
+                    "desktopfeed",
+                    "mobilefeed"
+                ],
+                "age_max": 65,
+                "custom_audiences": [
+                    {
+                        "name": "Clos du Bois Emails",
+                        "id": "6018255969489"
+                    }
+                ],
+                "age_min": 21,
+                "geo_locations": {
+                    "regions": [
+                        {
+                            "name": "Alaska",
+                            "key": "3844",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Colorado",
+                            "key": "3848",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Hawaii",
+                            "key": "3854",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Idaho",
+                            "key": "3855",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Montana",
+                            "key": "3869",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Nevada",
+                            "key": "3871",
+                            "country": "US"
+                        },
+                        {
+                            "name": "New Mexico",
+                            "key": "3874",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Oregon",
+                            "key": "3880",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Texas",
+                            "key": "3886",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Washington",
+                            "key": "3890",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Wyoming",
+                            "key": "3893",
+                            "country": "US"
+                        }
+                    ],
+                    "location_types": [
+                        "home",
+                        "recent"
+                    ]
+                }
+            },
+            "end_time": "2014-12-17T17:00:00-0800",
+            "id": "6019828336689"
+        },
+        {
+            "targetingsentencelines": {
+                "targetingsentencelines": [
+                    {
+                        "content": "Custom Audience:",
+                        "children": [
+                            "Lookalike (US, 1%) - Clos du Bois Emails"
+                        ]
+                    },
+                    {
+                        "content": "Location:",
+                        "children": [
+                            "United States: Alaska; Colorado; Hawaii; Idaho; Montana; Nevada; New Mexico; Oregon; Texas; Washington; Wyoming"
+                        ]
+                    },
+                    {
+                        "content": "Age:",
+                        "children": [
+                            "21 - 65+"
+                        ]
+                    },
+                    {
+                        "content": "Placements:",
+                        "children": [
+                            "News Feed on desktop computers or News Feed on mobile devices"
+                        ]
+                    }
+                ],
+                "id": "/targetingsentencelines"
+            },
+            "name": "RMW Direct Sales - West - Email Lookalikes",
+            "insights": {
+                "data": [
+                    {
+                        "spend": 467.64,
+                        "date_start": "2014-12-09",
+                        "date_stop": "2014-12-17"
+                    }
+                ],
+                "paging": {
+                    "cursors": {
+                        "before": "MAZDZD",
+                        "after": "MAZDZD"
+                    }
+                }
+            },
+            "start_time": "2014-12-09T00:00:00-0800",
+            "targeting": {
+                "page_types": [
+                    "desktopfeed",
+                    "mobilefeed"
+                ],
+                "age_max": 65,
+                "custom_audiences": [
+                    {
+                        "name": "Lookalike (US, 1%) - Clos du Bois Emails",
+                        "id": "6018265438689"
+                    }
+                ],
+                "age_min": 21,
+                "geo_locations": {
+                    "regions": [
+                        {
+                            "name": "Alaska",
+                            "key": "3844",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Colorado",
+                            "key": "3848",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Hawaii",
+                            "key": "3854",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Idaho",
+                            "key": "3855",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Montana",
+                            "key": "3869",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Nevada",
+                            "key": "3871",
+                            "country": "US"
+                        },
+                        {
+                            "name": "New Mexico",
+                            "key": "3874",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Oregon",
+                            "key": "3880",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Texas",
+                            "key": "3886",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Washington",
+                            "key": "3890",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Wyoming",
+                            "key": "3893",
+                            "country": "US"
+                        }
+                    ],
+                    "location_types": [
+                        "home",
+                        "recent"
+                    ]
+                }
+            },
+            "end_time": "2014-12-17T17:00:00-0800",
+            "id": "6019828336289"
+        },
+        {
+            "targetingsentencelines": {
+                "targetingsentencelines": [
+                    {
+                        "content": "Location:",
+                        "children": [
+                            "United States: Alaska; Colorado; Hawaii; Idaho; Nevada; New Mexico; Oregon; Texas; Washington; Wyoming"
+                        ]
+                    },
+                    {
+                        "content": "Connections:",
+                        "children": [
+                            "People who like Clos du Bois"
+                        ]
+                    },
+                    {
+                        "content": "Age:",
+                        "children": [
+                            "21 - 65+"
+                        ]
+                    },
+                    {
+                        "content": "Placements:",
+                        "children": [
+                            "News Feed on desktop computers or News Feed on mobile devices"
+                        ]
+                    }
+                ],
+                "id": "/targetingsentencelines"
+            },
+            "name": "RMW Direct Sales - West - Fans",
+            "insights": {
+                "data": [
+                    {
+                        "spend": 80,
+                        "date_start": "2014-12-09",
+                        "date_stop": "2014-12-17"
+                    }
+                ],
+                "paging": {
+                    "cursors": {
+                        "before": "MAZDZD",
+                        "after": "MAZDZD"
+                    }
+                }
+            },
+            "start_time": "2014-12-09T00:00:00-0800",
+            "targeting": {
+                "connections": [
+                    {
+                        "name": "Clos du Bois",
+                        "id": "251559094874294"
+                    }
+                ],
+                "age_max": 65,
+                "page_types": [
+                    "desktopfeed",
+                    "mobilefeed"
+                ],
+                "age_min": 21,
+                "geo_locations": {
+                    "regions": [
+                        {
+                            "name": "Alaska",
+                            "key": "3844",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Colorado",
+                            "key": "3848",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Hawaii",
+                            "key": "3854",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Idaho",
+                            "key": "3855",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Nevada",
+                            "key": "3871",
+                            "country": "US"
+                        },
+                        {
+                            "name": "New Mexico",
+                            "key": "3874",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Oregon",
+                            "key": "3880",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Texas",
+                            "key": "3886",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Washington",
+                            "key": "3890",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Wyoming",
+                            "key": "3893",
+                            "country": "US"
+                        }
+                    ],
+                    "location_types": [
+                        "home",
+                        "recent"
+                    ]
+                }
+            },
+            "end_time": "2014-12-17T17:00:00-0800",
+            "id": "6019828335089"
+        },
+        {
+            "targetingsentencelines": {
+                "targetingsentencelines": [
+                    {
+                        "content": "Custom Audience:",
+                        "children": [
+                            "Lookalike (US, 1%) - Clos du Bois Emails"
+                        ]
+                    },
+                    {
+                        "content": "Location:",
+                        "children": [
+                            "United States: District of Columbia; Florida; Georgia; Illinois; Iowa; Kansas; Maryland; Michigan; Minnesota; Missouri; Nebraska; New Hampshire; New York; North Carolina; South Carolina; Tennessee; Virginia; Wisconsin"
+                        ]
+                    },
+                    {
+                        "content": "Age:",
+                        "children": [
+                            "21 - 65+"
+                        ]
+                    },
+                    {
+                        "content": "Placements:",
+                        "children": [
+                            "News Feed on desktop computers or News Feed on mobile devices"
+                        ]
+                    }
+                ],
+                "id": "/targetingsentencelines"
+            },
+            "name": "RMW Direct Sales - East/Mid - Email Lookalikes",
+            "insights": {
+                "data": [
+                    {
+                        "spend": 365.6,
+                        "date_start": "2014-12-09",
+                        "date_stop": "2014-12-15"
+                    }
+                ],
+                "paging": {
+                    "cursors": {
+                        "before": "MAZDZD",
+                        "after": "MAZDZD"
+                    }
+                }
+            },
+            "start_time": "2014-12-09T00:00:00-0800",
+            "targeting": {
+                "page_types": [
+                    "desktopfeed",
+                    "mobilefeed"
+                ],
+                "age_max": 65,
+                "custom_audiences": [
+                    {
+                        "name": "Lookalike (US, 1%) - Clos du Bois Emails",
+                        "id": "6018265438689"
+                    }
+                ],
+                "age_min": 21,
+                "geo_locations": {
+                    "regions": [
+                        {
+                            "name": "District of Columbia",
+                            "key": "3851",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Florida",
+                            "key": "3852",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Georgia",
+                            "key": "3853",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Illinois",
+                            "key": "3856",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Iowa",
+                            "key": "3858",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Kansas",
+                            "key": "3859",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Maryland",
+                            "key": "3863",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Michigan",
+                            "key": "3865",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Minnesota",
+                            "key": "3866",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Missouri",
+                            "key": "3868",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Nebraska",
+                            "key": "3870",
+                            "country": "US"
+                        },
+                        {
+                            "name": "New Hampshire",
+                            "key": "3872",
+                            "country": "US"
+                        },
+                        {
+                            "name": "New York",
+                            "key": "3875",
+                            "country": "US"
+                        },
+                        {
+                            "name": "North Carolina",
+                            "key": "3876",
+                            "country": "US"
+                        },
+                        {
+                            "name": "South Carolina",
+                            "key": "3883",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Tennessee",
+                            "key": "3885",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Virginia",
+                            "key": "3889",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Wisconsin",
+                            "key": "3892",
+                            "country": "US"
+                        }
+                    ],
+                    "location_types": [
+                        "home",
+                        "recent"
+                    ]
+                }
+            },
+            "end_time": "2014-12-15T17:00:00-0800",
+            "id": "6019828306889"
+        },
+        {
+            "targetingsentencelines": {
+                "targetingsentencelines": [
+                    {
+                        "content": "Custom Audience:",
+                        "children": [
+                            "Clos du Bois Emails"
+                        ]
+                    },
+                    {
+                        "content": "Location:",
+                        "children": [
+                            "United States: District of Columbia; Florida; Georgia; Illinois; Iowa; Kansas; Maryland; Michigan; Minnesota; Missouri; Nebraska; New Hampshire; New York; North Carolina; South Carolina; Tennessee; Virginia; Wisconsin"
+                        ]
+                    },
+                    {
+                        "content": "Age:",
+                        "children": [
+                            "21 - 65+"
+                        ]
+                    },
+                    {
+                        "content": "Placements:",
+                        "children": [
+                            "News Feed on desktop computers or News Feed on mobile devices"
+                        ]
+                    }
+                ],
+                "id": "/targetingsentencelines"
+            },
+            "name": "RMW Direct Sales - East/Mid - Emails",
+            "insights": {
+                "data": [
+                    {
+                        "spend": 32.32,
+                        "date_start": "2014-12-09",
+                        "date_stop": "2014-12-15"
+                    }
+                ],
+                "paging": {
+                    "cursors": {
+                        "before": "MAZDZD",
+                        "after": "MAZDZD"
+                    }
+                }
+            },
+            "start_time": "2014-12-09T00:00:00-0800",
+            "targeting": {
+                "page_types": [
+                    "desktopfeed",
+                    "mobilefeed"
+                ],
+                "age_max": 65,
+                "custom_audiences": [
+                    {
+                        "name": "Clos du Bois Emails",
+                        "id": "6018255969489"
+                    }
+                ],
+                "age_min": 21,
+                "geo_locations": {
+                    "regions": [
+                        {
+                            "name": "District of Columbia",
+                            "key": "3851",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Florida",
+                            "key": "3852",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Georgia",
+                            "key": "3853",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Illinois",
+                            "key": "3856",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Iowa",
+                            "key": "3858",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Kansas",
+                            "key": "3859",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Maryland",
+                            "key": "3863",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Michigan",
+                            "key": "3865",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Minnesota",
+                            "key": "3866",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Missouri",
+                            "key": "3868",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Nebraska",
+                            "key": "3870",
+                            "country": "US"
+                        },
+                        {
+                            "name": "New Hampshire",
+                            "key": "3872",
+                            "country": "US"
+                        },
+                        {
+                            "name": "New York",
+                            "key": "3875",
+                            "country": "US"
+                        },
+                        {
+                            "name": "North Carolina",
+                            "key": "3876",
+                            "country": "US"
+                        },
+                        {
+                            "name": "South Carolina",
+                            "key": "3883",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Tennessee",
+                            "key": "3885",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Virginia",
+                            "key": "3889",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Wisconsin",
+                            "key": "3892",
+                            "country": "US"
+                        }
+                    ],
+                    "location_types": [
+                        "home",
+                        "recent"
+                    ]
+                }
+            },
+            "end_time": "2014-12-15T17:00:00-0800",
+            "id": "6019828306689"
+        },
+        {
+            "targetingsentencelines": {
+                "targetingsentencelines": [
+                    {
+                        "content": "Location:",
+                        "children": [
+                            "United States: District of Columbia; Florida; Georgia; Illinois; Iowa; Kansas; Maryland; Michigan; Minnesota; Missouri; Nebraska; New Hampshire; New York; North Carolina; South Carolina; Tennessee; Virginia; Wisconsin"
+                        ]
+                    },
+                    {
+                        "content": "Connections:",
+                        "children": [
+                            "People who like Clos du Bois"
+                        ]
+                    },
+                    {
+                        "content": "Age:",
+                        "children": [
+                            "21 - 65+"
+                        ]
+                    },
+                    {
+                        "content": "Placements:",
+                        "children": [
+                            "News Feed on desktop computers or News Feed on mobile devices"
+                        ]
+                    }
+                ],
+                "id": "/targetingsentencelines"
+            },
+            "name": "RMW Direct Sales - East/Mid - Fans",
+            "insights": {
+                "data": [
+                    {
+                        "spend": 217.37,
+                        "date_start": "2014-12-09",
+                        "date_stop": "2014-12-15"
+                    }
+                ],
+                "paging": {
+                    "cursors": {
+                        "before": "MAZDZD",
+                        "after": "MAZDZD"
+                    }
+                }
+            },
+            "start_time": "2014-12-09T00:00:00-0800",
+            "targeting": {
+                "connections": [
+                    {
+                        "name": "Clos du Bois",
+                        "id": "251559094874294"
+                    }
+                ],
+                "age_max": 65,
+                "page_types": [
+                    "desktopfeed",
+                    "mobilefeed"
+                ],
+                "age_min": 21,
+                "geo_locations": {
+                    "regions": [
+                        {
+                            "name": "District of Columbia",
+                            "key": "3851",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Florida",
+                            "key": "3852",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Georgia",
+                            "key": "3853",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Illinois",
+                            "key": "3856",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Iowa",
+                            "key": "3858",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Kansas",
+                            "key": "3859",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Maryland",
+                            "key": "3863",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Michigan",
+                            "key": "3865",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Minnesota",
+                            "key": "3866",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Missouri",
+                            "key": "3868",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Nebraska",
+                            "key": "3870",
+                            "country": "US"
+                        },
+                        {
+                            "name": "New Hampshire",
+                            "key": "3872",
+                            "country": "US"
+                        },
+                        {
+                            "name": "New York",
+                            "key": "3875",
+                            "country": "US"
+                        },
+                        {
+                            "name": "North Carolina",
+                            "key": "3876",
+                            "country": "US"
+                        },
+                        {
+                            "name": "South Carolina",
+                            "key": "3883",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Tennessee",
+                            "key": "3885",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Virginia",
+                            "key": "3889",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Wisconsin",
+                            "key": "3892",
+                            "country": "US"
+                        }
+                    ],
+                    "location_types": [
+                        "home",
+                        "recent"
+                    ]
+                }
+            },
+            "end_time": "2014-12-15T17:00:00-0800",
+            "id": "6019828305689"
+        },
+        {
+            "targetingsentencelines": {
+                "targetingsentencelines": [
+                    {
+                        "content": "Location:",
+                        "children": [
+                            "United States: California"
+                        ]
+                    },
+                    {
+                        "content": "Connections:",
+                        "children": [
+                            "People who like Clos du Bois"
+                        ]
+                    },
+                    {
+                        "content": "Age:",
+                        "children": [
+                            "21 - 65+"
+                        ]
+                    },
+                    {
+                        "content": "Placements:",
+                        "children": [
+                            "News Feed on desktop computers or News Feed on mobile devices"
+                        ]
+                    }
+                ],
+                "id": "/targetingsentencelines"
+            },
+            "name": "RMW Direct Sales - California - Fans",
+            "insights": {
+                "data": [
+                    {
+                        "spend": 217.37,
+                        "date_start": "2014-12-09",
+                        "date_stop": "2014-12-19"
+                    }
+                ],
+                "paging": {
+                    "cursors": {
+                        "before": "MAZDZD",
+                        "after": "MAZDZD"
+                    }
+                }
+            },
+            "start_time": "2014-12-09T00:00:00-0800",
+            "targeting": {
+                "connections": [
+                    {
+                        "name": "Clos du Bois",
+                        "id": "251559094874294"
+                    }
+                ],
+                "age_max": 65,
+                "page_types": [
+                    "desktopfeed",
+                    "mobilefeed"
+                ],
+                "age_min": 21,
+                "geo_locations": {
+                    "regions": [
+                        {
+                            "name": "California",
+                            "key": "3847",
+                            "country": "US"
+                        }
+                    ],
+                    "location_types": [
+                        "home",
+                        "recent"
+                    ]
+                }
+            },
+            "end_time": "2014-12-19T17:00:00-0800",
+            "id": "6019828268089"
+        },
+        {
+            "targetingsentencelines": {
+                "targetingsentencelines": [
+                    {
+                        "content": "Custom Audience:",
+                        "children": [
+                            "Lookalike (US, 1%) - Clos du Bois Emails"
+                        ]
+                    },
+                    {
+                        "content": "Location:",
+                        "children": [
+                            "United States: California"
+                        ]
+                    },
+                    {
+                        "content": "Age:",
+                        "children": [
+                            "21 - 65+"
+                        ]
+                    },
+                    {
+                        "content": "Placements:",
+                        "children": [
+                            "News Feed on desktop computers or News Feed on mobile devices"
+                        ]
+                    }
+                ],
+                "id": "/targetingsentencelines"
+            },
+            "name": "RMW Direct Sales - California - Email Lookalikes",
+            "insights": {
+                "data": [
+                    {
+                        "spend": 414.66,
+                        "date_start": "2014-12-09",
+                        "date_stop": "2014-12-19"
+                    }
+                ],
+                "paging": {
+                    "cursors": {
+                        "before": "MAZDZD",
+                        "after": "MAZDZD"
+                    }
+                }
+            },
+            "start_time": "2014-12-09T00:00:00-0800",
+            "targeting": {
+                "page_types": [
+                    "desktopfeed",
+                    "mobilefeed"
+                ],
+                "age_max": 65,
+                "custom_audiences": [
+                    {
+                        "name": "Lookalike (US, 1%) - Clos du Bois Emails",
+                        "id": "6018265438689"
+                    }
+                ],
+                "age_min": 21,
+                "geo_locations": {
+                    "regions": [
+                        {
+                            "name": "California",
+                            "key": "3847",
+                            "country": "US"
+                        }
+                    ],
+                    "location_types": [
+                        "home",
+                        "recent"
+                    ]
+                }
+            },
+            "end_time": "2014-12-19T17:00:00-0800",
+            "id": "6019828267289"
+        },
+        {
+            "targetingsentencelines": {
+                "targetingsentencelines": [
+                    {
+                        "content": "Custom Audience:",
+                        "children": [
+                            "Clos du Bois Emails"
+                        ]
+                    },
+                    {
+                        "content": "Location:",
+                        "children": [
+                            "United States: California"
+                        ]
+                    },
+                    {
+                        "content": "Age:",
+                        "children": [
+                            "21 - 65+"
+                        ]
+                    },
+                    {
+                        "content": "Placements:",
+                        "children": [
+                            "News Feed on desktop computers or News Feed on mobile devices"
+                        ]
+                    }
+                ],
+                "id": "/targetingsentencelines"
+            },
+            "name": "RMW Direct Sales - California - Emails",
+            "insights": {
+                "data": [
+                    {
+                        "spend": 18.46,
+                        "date_start": "2014-12-09",
+                        "date_stop": "2014-12-19"
+                    }
+                ],
+                "paging": {
+                    "cursors": {
+                        "before": "MAZDZD",
+                        "after": "MAZDZD"
+                    }
+                }
+            },
+            "start_time": "2014-12-09T00:00:00-0800",
+            "targeting": {
+                "page_types": [
+                    "desktopfeed",
+                    "mobilefeed"
+                ],
+                "age_max": 65,
+                "custom_audiences": [
+                    {
+                        "name": "Clos du Bois Emails",
+                        "id": "6018255969489"
+                    }
+                ],
+                "age_min": 21,
+                "geo_locations": {
+                    "regions": [
+                        {
+                            "name": "California",
+                            "key": "3847",
+                            "country": "US"
+                        }
+                    ],
+                    "location_types": [
+                        "home",
+                        "recent"
+                    ]
+                }
+            },
+            "end_time": "2014-12-19T17:00:00-0800",
+            "id": "6019828267089"
+        },
+        {
+            "targetingsentencelines": {
+                "targetingsentencelines": [
+                    {
+                        "content": "Custom Audience:",
+                        "children": [
+                            "Clos du Bois Emails"
+                        ]
+                    },
+                    {
+                        "content": "Location:",
+                        "children": [
+                            "United States: Alaska; Colorado; Hawaii; Idaho; Montana; Nevada; New Mexico; Oregon; Texas; Washington; Wyoming"
+                        ]
+                    },
+                    {
+                        "content": "Age:",
+                        "children": [
+                            "21 - 65+"
+                        ]
+                    },
+                    {
+                        "content": "Placements:",
+                        "children": [
+                            "News Feed on desktop computers or News Feed on mobile devices"
+                        ]
+                    }
+                ],
+                "id": "/targetingsentencelines"
+            },
+            "name": "Clos du Bois Direct Sales - West - Emails",
+            "insights": {
+                "data": [
+                    {
+                        "spend": 10.57,
+                        "date_start": "2014-12-09",
+                        "date_stop": "2014-12-17"
+                    }
+                ],
+                "paging": {
+                    "cursors": {
+                        "before": "MAZDZD",
+                        "after": "MAZDZD"
+                    }
+                }
+            },
+            "start_time": "2014-12-09T00:00:00-0800",
+            "targeting": {
+                "page_types": [
+                    "desktopfeed",
+                    "mobilefeed"
+                ],
+                "age_max": 65,
+                "custom_audiences": [
+                    {
+                        "name": "Clos du Bois Emails",
+                        "id": "6018255969489"
+                    }
+                ],
+                "age_min": 21,
+                "geo_locations": {
+                    "regions": [
+                        {
+                            "name": "Alaska",
+                            "key": "3844",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Colorado",
+                            "key": "3848",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Hawaii",
+                            "key": "3854",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Idaho",
+                            "key": "3855",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Montana",
+                            "key": "3869",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Nevada",
+                            "key": "3871",
+                            "country": "US"
+                        },
+                        {
+                            "name": "New Mexico",
+                            "key": "3874",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Oregon",
+                            "key": "3880",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Texas",
+                            "key": "3886",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Washington",
+                            "key": "3890",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Wyoming",
+                            "key": "3893",
+                            "country": "US"
+                        }
+                    ],
+                    "location_types": [
+                        "home",
+                        "recent"
+                    ]
+                }
+            },
+            "end_time": "2014-12-17T17:00:00-0800",
+            "id": "6019828225489"
+        },
+        {
+            "targetingsentencelines": {
+                "targetingsentencelines": [
+                    {
+                        "content": "Custom Audience:",
+                        "children": [
+                            "Lookalike (US, 1%) - Clos du Bois Emails"
+                        ]
+                    },
+                    {
+                        "content": "Location:",
+                        "children": [
+                            "United States: Alaska; Colorado; Hawaii; Idaho; Montana; Nevada; New Mexico; Oregon; Texas; Washington; Wyoming"
+                        ]
+                    },
+                    {
+                        "content": "Age:",
+                        "children": [
+                            "21 - 65+"
+                        ]
+                    },
+                    {
+                        "content": "Placements:",
+                        "children": [
+                            "News Feed on desktop computers or News Feed on mobile devices"
+                        ]
+                    }
+                ],
+                "id": "/targetingsentencelines"
+            },
+            "name": "Clos du Bois Direct Sales - West - Email Lookalikes",
+            "insights": {
+                "data": [
+                    {
+                        "spend": 292.16,
+                        "date_start": "2014-12-09",
+                        "date_stop": "2014-12-17"
+                    }
+                ],
+                "paging": {
+                    "cursors": {
+                        "before": "MAZDZD",
+                        "after": "MAZDZD"
+                    }
+                }
+            },
+            "start_time": "2014-12-09T00:00:00-0800",
+            "targeting": {
+                "page_types": [
+                    "desktopfeed",
+                    "mobilefeed"
+                ],
+                "age_max": 65,
+                "custom_audiences": [
+                    {
+                        "name": "Lookalike (US, 1%) - Clos du Bois Emails",
+                        "id": "6018265438689"
+                    }
+                ],
+                "age_min": 21,
+                "geo_locations": {
+                    "regions": [
+                        {
+                            "name": "Alaska",
+                            "key": "3844",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Colorado",
+                            "key": "3848",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Hawaii",
+                            "key": "3854",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Idaho",
+                            "key": "3855",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Montana",
+                            "key": "3869",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Nevada",
+                            "key": "3871",
+                            "country": "US"
+                        },
+                        {
+                            "name": "New Mexico",
+                            "key": "3874",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Oregon",
+                            "key": "3880",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Texas",
+                            "key": "3886",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Washington",
+                            "key": "3890",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Wyoming",
+                            "key": "3893",
+                            "country": "US"
+                        }
+                    ],
+                    "location_types": [
+                        "home",
+                        "recent"
+                    ]
+                }
+            },
+            "end_time": "2014-12-17T17:00:00-0800",
+            "id": "6019828225089"
+        },
+        {
+            "targetingsentencelines": {
+                "targetingsentencelines": [
+                    {
+                        "content": "Location:",
+                        "children": [
+                            "United States: Alaska; Colorado; Hawaii; Idaho; Nevada; New Mexico; Oregon; Texas; Washington; Wyoming"
+                        ]
+                    },
+                    {
+                        "content": "Connections:",
+                        "children": [
+                            "People who like Clos du Bois"
+                        ]
+                    },
+                    {
+                        "content": "Age:",
+                        "children": [
+                            "21 - 65+"
+                        ]
+                    },
+                    {
+                        "content": "Placements:",
+                        "children": [
+                            "News Feed on desktop computers or News Feed on mobile devices"
+                        ]
+                    }
+                ],
+                "id": "/targetingsentencelines"
+            },
+            "name": "Clos du Bois Direct Sales - West - Fans",
+            "insights": {
+                "data": [
+                    {
+                        "spend": 200.45,
+                        "date_start": "2014-12-09",
+                        "date_stop": "2014-12-17"
+                    }
+                ],
+                "paging": {
+                    "cursors": {
+                        "before": "MAZDZD",
+                        "after": "MAZDZD"
+                    }
+                }
+            },
+            "start_time": "2014-12-09T00:00:00-0800",
+            "targeting": {
+                "connections": [
+                    {
+                        "name": "Clos du Bois",
+                        "id": "251559094874294"
+                    }
+                ],
+                "age_max": 65,
+                "page_types": [
+                    "desktopfeed",
+                    "mobilefeed"
+                ],
+                "age_min": 21,
+                "geo_locations": {
+                    "regions": [
+                        {
+                            "name": "Alaska",
+                            "key": "3844",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Colorado",
+                            "key": "3848",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Hawaii",
+                            "key": "3854",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Idaho",
+                            "key": "3855",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Nevada",
+                            "key": "3871",
+                            "country": "US"
+                        },
+                        {
+                            "name": "New Mexico",
+                            "key": "3874",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Oregon",
+                            "key": "3880",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Texas",
+                            "key": "3886",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Washington",
+                            "key": "3890",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Wyoming",
+                            "key": "3893",
+                            "country": "US"
+                        }
+                    ],
+                    "location_types": [
+                        "home",
+                        "recent"
+                    ]
+                }
+            },
+            "end_time": "2014-12-17T17:00:00-0800",
+            "id": "6019828224289"
+        },
+        {
+            "targetingsentencelines": {
+                "targetingsentencelines": [
+                    {
+                        "content": "Location:",
+                        "children": [
+                            "United States: District of Columbia; Florida; Georgia; Illinois; Iowa; Kansas; Maryland; Michigan; Minnesota; Missouri; Nebraska; New Hampshire; New York; North Carolina; South Carolina; Tennessee; Virginia; Wisconsin"
+                        ]
+                    },
+                    {
+                        "content": "Connections:",
+                        "children": [
+                            "People who like Clos du Bois"
+                        ]
+                    },
+                    {
+                        "content": "Age:",
+                        "children": [
+                            "21 - 65+"
+                        ]
+                    },
+                    {
+                        "content": "Placements:",
+                        "children": [
+                            "News Feed on desktop computers or News Feed on mobile devices"
+                        ]
+                    }
+                ],
+                "id": "/targetingsentencelines"
+            },
+            "name": "Clos du Bois Direct Sales - East/Mid - Fans",
+            "insights": {
+                "data": [
+                    {
+                        "spend": 199.99,
+                        "date_start": "2014-12-09",
+                        "date_stop": "2014-12-15"
+                    }
+                ],
+                "paging": {
+                    "cursors": {
+                        "before": "MAZDZD",
+                        "after": "MAZDZD"
+                    }
+                }
+            },
+            "start_time": "2014-12-09T00:00:00-0800",
+            "targeting": {
+                "connections": [
+                    {
+                        "name": "Clos du Bois",
+                        "id": "251559094874294"
+                    }
+                ],
+                "age_max": 65,
+                "page_types": [
+                    "desktopfeed",
+                    "mobilefeed"
+                ],
+                "age_min": 21,
+                "geo_locations": {
+                    "regions": [
+                        {
+                            "name": "District of Columbia",
+                            "key": "3851",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Florida",
+                            "key": "3852",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Georgia",
+                            "key": "3853",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Illinois",
+                            "key": "3856",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Iowa",
+                            "key": "3858",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Kansas",
+                            "key": "3859",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Maryland",
+                            "key": "3863",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Michigan",
+                            "key": "3865",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Minnesota",
+                            "key": "3866",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Missouri",
+                            "key": "3868",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Nebraska",
+                            "key": "3870",
+                            "country": "US"
+                        },
+                        {
+                            "name": "New Hampshire",
+                            "key": "3872",
+                            "country": "US"
+                        },
+                        {
+                            "name": "New York",
+                            "key": "3875",
+                            "country": "US"
+                        },
+                        {
+                            "name": "North Carolina",
+                            "key": "3876",
+                            "country": "US"
+                        },
+                        {
+                            "name": "South Carolina",
+                            "key": "3883",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Tennessee",
+                            "key": "3885",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Virginia",
+                            "key": "3889",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Wisconsin",
+                            "key": "3892",
+                            "country": "US"
+                        }
+                    ],
+                    "location_types": [
+                        "home",
+                        "recent"
+                    ]
+                }
+            },
+            "end_time": "2014-12-15T17:00:00-0800",
+            "id": "6019828161689"
+        },
+        {
+            "targetingsentencelines": {
+                "targetingsentencelines": [
+                    {
+                        "content": "Custom Audience:",
+                        "children": [
+                            "Lookalike (US, 1%) - Clos du Bois Emails"
+                        ]
+                    },
+                    {
+                        "content": "Location:",
+                        "children": [
+                            "United States: District of Columbia; Florida; Georgia; Illinois; Iowa; Kansas; Maryland; Michigan; Minnesota; Missouri; Nebraska; New Hampshire; New York; North Carolina; South Carolina; Tennessee; Virginia; Wisconsin"
+                        ]
+                    },
+                    {
+                        "content": "Age:",
+                        "children": [
+                            "21 - 65+"
+                        ]
+                    },
+                    {
+                        "content": "Placements:",
+                        "children": [
+                            "News Feed on desktop computers or News Feed on mobile devices"
+                        ]
+                    }
+                ],
+                "id": "/targetingsentencelines"
+            },
+            "name": "Clos du Bois Direct Sales - East/Mid - Email Lookalikes",
+            "insights": {
+                "data": [
+                    {
+                        "spend": 417.2,
+                        "date_start": "2014-12-09",
+                        "date_stop": "2014-12-15"
+                    }
+                ],
+                "paging": {
+                    "cursors": {
+                        "before": "MAZDZD",
+                        "after": "MAZDZD"
+                    }
+                }
+            },
+            "start_time": "2014-12-09T00:00:00-0800",
+            "targeting": {
+                "page_types": [
+                    "desktopfeed",
+                    "mobilefeed"
+                ],
+                "age_max": 65,
+                "custom_audiences": [
+                    {
+                        "name": "Lookalike (US, 1%) - Clos du Bois Emails",
+                        "id": "6018265438689"
+                    }
+                ],
+                "age_min": 21,
+                "geo_locations": {
+                    "regions": [
+                        {
+                            "name": "District of Columbia",
+                            "key": "3851",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Florida",
+                            "key": "3852",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Georgia",
+                            "key": "3853",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Illinois",
+                            "key": "3856",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Iowa",
+                            "key": "3858",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Kansas",
+                            "key": "3859",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Maryland",
+                            "key": "3863",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Michigan",
+                            "key": "3865",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Minnesota",
+                            "key": "3866",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Missouri",
+                            "key": "3868",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Nebraska",
+                            "key": "3870",
+                            "country": "US"
+                        },
+                        {
+                            "name": "New Hampshire",
+                            "key": "3872",
+                            "country": "US"
+                        },
+                        {
+                            "name": "New York",
+                            "key": "3875",
+                            "country": "US"
+                        },
+                        {
+                            "name": "North Carolina",
+                            "key": "3876",
+                            "country": "US"
+                        },
+                        {
+                            "name": "South Carolina",
+                            "key": "3883",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Tennessee",
+                            "key": "3885",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Virginia",
+                            "key": "3889",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Wisconsin",
+                            "key": "3892",
+                            "country": "US"
+                        }
+                    ],
+                    "location_types": [
+                        "home",
+                        "recent"
+                    ]
+                }
+            },
+            "end_time": "2014-12-15T17:00:00-0800",
+            "id": "6019828160889"
+        },
+        {
+            "targetingsentencelines": {
+                "targetingsentencelines": [
+                    {
+                        "content": "Custom Audience:",
+                        "children": [
+                            "Clos du Bois Emails"
+                        ]
+                    },
+                    {
+                        "content": "Location:",
+                        "children": [
+                            "United States: District of Columbia; Florida; Georgia; Illinois; Iowa; Kansas; Maryland; Michigan; Minnesota; Missouri; Nebraska; New Hampshire; New York; North Carolina; South Carolina; Tennessee; Virginia; Wisconsin"
+                        ]
+                    },
+                    {
+                        "content": "Age:",
+                        "children": [
+                            "21 - 65+"
+                        ]
+                    },
+                    {
+                        "content": "Placements:",
+                        "children": [
+                            "News Feed on desktop computers or News Feed on mobile devices"
+                        ]
+                    }
+                ],
+                "id": "/targetingsentencelines"
+            },
+            "name": "Clos du Bois Direct Sales - East/Mid - Emails",
+            "insights": {
+                "data": [
+                    {
+                        "spend": 20.02,
+                        "date_start": "2014-12-09",
+                        "date_stop": "2014-12-15"
+                    }
+                ],
+                "paging": {
+                    "cursors": {
+                        "before": "MAZDZD",
+                        "after": "MAZDZD"
+                    }
+                }
+            },
+            "start_time": "2014-12-09T00:00:00-0800",
+            "targeting": {
+                "page_types": [
+                    "desktopfeed",
+                    "mobilefeed"
+                ],
+                "age_max": 65,
+                "custom_audiences": [
+                    {
+                        "name": "Clos du Bois Emails",
+                        "id": "6018255969489"
+                    }
+                ],
+                "age_min": 21,
+                "geo_locations": {
+                    "regions": [
+                        {
+                            "name": "District of Columbia",
+                            "key": "3851",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Florida",
+                            "key": "3852",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Georgia",
+                            "key": "3853",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Illinois",
+                            "key": "3856",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Iowa",
+                            "key": "3858",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Kansas",
+                            "key": "3859",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Maryland",
+                            "key": "3863",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Michigan",
+                            "key": "3865",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Minnesota",
+                            "key": "3866",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Missouri",
+                            "key": "3868",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Nebraska",
+                            "key": "3870",
+                            "country": "US"
+                        },
+                        {
+                            "name": "New Hampshire",
+                            "key": "3872",
+                            "country": "US"
+                        },
+                        {
+                            "name": "New York",
+                            "key": "3875",
+                            "country": "US"
+                        },
+                        {
+                            "name": "North Carolina",
+                            "key": "3876",
+                            "country": "US"
+                        },
+                        {
+                            "name": "South Carolina",
+                            "key": "3883",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Tennessee",
+                            "key": "3885",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Virginia",
+                            "key": "3889",
+                            "country": "US"
+                        },
+                        {
+                            "name": "Wisconsin",
+                            "key": "3892",
+                            "country": "US"
+                        }
+                    ],
+                    "location_types": [
+                        "home",
+                        "recent"
+                    ]
+                }
+            },
+            "end_time": "2014-12-15T17:00:00-0800",
+            "id": "6019828160689"
+        },
+        {
+            "targetingsentencelines": {
+                "targetingsentencelines": [
+                    {
+                        "content": "Custom Audience:",
+                        "children": [
+                            "Lookalike (US, 1%) - Clos du Bois Emails"
+                        ]
+                    },
+                    {
+                        "content": "Location:",
+                        "children": [
+                            "United States: California"
+                        ]
+                    },
+                    {
+                        "content": "Age:",
+                        "children": [
+                            "21 - 65+"
+                        ]
+                    },
+                    {
+                        "content": "Placements:",
+                        "children": [
+                            "News Feed on desktop computers or News Feed on mobile devices"
+                        ]
+                    }
+                ],
+                "id": "/targetingsentencelines"
+            },
+            "name": "Clos du Bois Direct Sales - California - Email Lookalikes",
+            "insights": {
+                "data": [
+                    {
+                        "spend": 467.9,
+                        "date_start": "2014-12-09",
+                        "date_stop": "2014-12-19"
+                    }
+                ],
+                "paging": {
+                    "cursors": {
+                        "before": "MAZDZD",
+                        "after": "MAZDZD"
+                    }
+                }
+            },
+            "start_time": "2014-12-09T00:00:00-0800",
+            "targeting": {
+                "page_types": [
+                    "desktopfeed",
+                    "mobilefeed"
+                ],
+                "age_max": 65,
+                "custom_audiences": [
+                    {
+                        "name": "Lookalike (US, 1%) - Clos du Bois Emails",
+                        "id": "6018265438689"
+                    }
+                ],
+                "age_min": 21,
+                "geo_locations": {
+                    "regions": [
+                        {
+                            "name": "California",
+                            "key": "3847",
+                            "country": "US"
+                        }
+                    ],
+                    "location_types": [
+                        "home",
+                        "recent"
+                    ]
+                }
+            },
+            "end_time": "2014-12-19T17:00:00-0800",
+            "id": "6019828086089"
+        },
+        {
+            "targetingsentencelines": {
+                "targetingsentencelines": [
+                    {
+                        "content": "Custom Audience:",
+                        "children": [
+                            "Clos du Bois Emails"
+                        ]
+                    },
+                    {
+                        "content": "Location:",
+                        "children": [
+                            "United States: California"
+                        ]
+                    },
+                    {
+                        "content": "Age:",
+                        "children": [
+                            "21 - 65+"
+                        ]
+                    },
+                    {
+                        "content": "Placements:",
+                        "children": [
+                            "News Feed on desktop computers or News Feed on mobile devices"
+                        ]
+                    }
+                ],
+                "id": "/targetingsentencelines"
+            },
+            "name": "Clos du Bois Direct Sales - California - Emails",
+            "insights": {
+                "data": [
+                    {
+                        "spend": 13.35,
+                        "date_start": "2014-12-09",
+                        "date_stop": "2014-12-19"
+                    }
+                ],
+                "paging": {
+                    "cursors": {
+                        "before": "MAZDZD",
+                        "after": "MAZDZD"
+                    }
+                }
+            },
+            "start_time": "2014-12-09T00:00:00-0800",
+            "targeting": {
+                "page_types": [
+                    "desktopfeed",
+                    "mobilefeed"
+                ],
+                "age_max": 65,
+                "custom_audiences": [
+                    {
+                        "name": "Clos du Bois Emails",
+                        "id": "6018255969489"
+                    }
+                ],
+                "age_min": 21,
+                "geo_locations": {
+                    "regions": [
+                        {
+                            "name": "California",
+                            "key": "3847",
+                            "country": "US"
+                        }
+                    ],
+                    "location_types": [
+                        "home",
+                        "recent"
+                    ]
+                }
+            },
+            "end_time": "2014-12-19T17:00:00-0800",
+            "id": "6019828085889"
+        },
+        {
+            "targetingsentencelines": {
+                "targetingsentencelines": [
+                    {
+                        "content": "Location:",
+                        "children": [
+                            "United States: California"
+                        ]
+                    },
+                    {
+                        "content": "Connections:",
+                        "children": [
+                            "People who like Clos du Bois"
+                        ]
+                    },
+                    {
+                        "content": "Age:",
+                        "children": [
+                            "21 - 65+"
+                        ]
+                    },
+                    {
+                        "content": "Placements:",
+                        "children": [
+                            "News Feed on desktop computers or News Feed on mobile devices"
+                        ]
+                    }
+                ],
+                "id": "/targetingsentencelines"
+            },
+            "name": "Clos du Bois Direct Sales - California - Fans",
+            "insights": {
+                "data": [
+                    {
+                        "spend": 198.87,
+                        "date_start": "2014-12-09",
+                        "date_stop": "2014-12-19"
+                    }
+                ],
+                "paging": {
+                    "cursors": {
+                        "before": "MAZDZD",
+                        "after": "MAZDZD"
+                    }
+                }
+            },
+            "start_time": "2014-12-09T00:00:00-0800",
+            "targeting": {
+                "connections": [
+                    {
+                        "name": "Clos du Bois",
+                        "id": "251559094874294"
+                    }
+                ],
+                "age_max": 65,
+                "page_types": [
+                    "desktopfeed",
+                    "mobilefeed"
+                ],
+                "age_min": 21,
+                "geo_locations": {
+                    "regions": [
+                        {
+                            "name": "California",
+                            "key": "3847",
+                            "country": "US"
+                        }
+                    ],
+                    "location_types": [
+                        "home",
+                        "recent"
+                    ]
+                }
+            },
+            "end_time": "2014-12-19T17:00:00-0800",
+            "id": "6019828084889"
+        },
+        {
+            "targetingsentencelines": {
+                "targetingsentencelines": [],
+                "id": "/targetingsentencelines"
+            },
+            "name": "Constellation Remarketing Ad Set 1",
+            "insights": {
+                "data": [
+                    {
+                        "spend": 201.94,
+                        "date_start": "2014-10-23",
+                        "date_stop": "2016-01-25"
+                    }
+                ],
+                "paging": {
+                    "cursors": {
+                        "before": "MAZDZD",
+                        "after": "MAZDZD"
+                    }
+                }
+            },
+            "id": "6018302526489",
+            "start_time": "2014-10-23T11:59:16-0700"
+        }
+    ],
+    "paging": {
+        "cursors": {
+            "before": "NjAyOTAzMTgyMDA4OQZDZD",
+            "after": "NjAxODMwMjUyNjQ4OQZDZD"
+        }
+    }
+}
