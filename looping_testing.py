@@ -2,7 +2,7 @@ import json
 import csv
 
 
-f = open('Arbor_Mist_data_pull.json', 'r')
+f = open('Estancia_data_pull.json', 'r')
 arr_for_csv = []
 parsed = json.load(f)
 # print(parsed['data'][0]['end_time'])
@@ -121,7 +121,7 @@ arr_for_csv = []
 
 
 
-for i in parsed[26]['data']:
+for i in parsed[7]['data']:
     new_list = []
     gender_arr = i['targetingsentencelines']['targetingsentencelines']
     new_list.append(i['name'])
@@ -152,10 +152,10 @@ for i in parsed[26]['data']:
         new_list.append('No Gender Data Available')
 
     # This is for the account name
-    new_list.append(i['name'][0:11])
+    new_list.append(i['name'][0:9])
 
     try:
-        new_list.append(i['insights']['data'][0]['spend'])
+        new_list.append(i['insights']['data'][0]['spend'] * 1.15)
     except KeyError:
         new_list.append('Spend Not Available')
     try:
@@ -173,7 +173,7 @@ for i in parsed[26]['data']:
 
     arr_for_csv.append(new_list)
 
-print(arr_for_csv)
+print(arr_for_csv[22])
 
 
 
