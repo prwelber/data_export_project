@@ -2,7 +2,7 @@ import json
 import csv
 
 
-f = open('RexGoliath_data_pull.json', 'r')
+f = open('Arbor_Mist_data_pull.json', 'r')
 arr_for_csv = []
 parsed = json.load(f)
 # print(parsed['data'][0]['end_time'])
@@ -65,11 +65,67 @@ parsed = json.load(f)
 # for i in parsed[0]['data']:
 #     print(i['name'])
 
-for i in parsed[0]['data']:
+# for i in parsed[25]['data']:
+#     new_list = []
+#     new_list.append(i['name'])
+#     new_list.append(i['start_time'][0:10])
+#     gender_arr = i['targetingsentencelines']['targetingsentencelines']
+
+#     try:
+#         new_list.append(i['end_time'][0:10])
+#     except KeyError:
+#         try:
+#             new_list.append(i['insights']['data'][0]['date_stop'])
+#         except KeyError:
+#             new_list.append('Date Not Available')
+
+#     try:
+#         new_list.append(i['targeting'])
+#     except KeyError:
+#         new_list.append('No Targeting Information')
+
+#     try:
+#         if {'content': 'Gender:', 'children': ['Female']} in gender_arr:
+#             new_list.append('Female')
+#         elif {'content': 'Gender:', 'children': ['Male']} in gender_arr:
+#             new_list.append('Male')
+#         else:
+#             new_list.append('No Gender Data')
+#     except KeyError:
+#         new_list.append('No Gender Data Available')
+
+#     new_list.append(i['name'][0:10])
+#     try:
+#         new_list.append(i['insights']['data'][0]['spend'])
+#     except KeyError:
+#         new_list.append('Spend Not Available')
+#     try:
+#         new_list.append(i['targeting']['age_min'])
+#     except KeyError:
+#         new_list.append('No Targeting')
+#     try:
+#         new_list.append(i['targeting']['age_max'])
+#     except KeyError:
+#         new_list.append('No Targeting')
+#     try:
+#         new_list.append(i['targetingsentencelines'])
+#     except KeyError:
+#         new_list.append('No Targeting Sentence Lines')
+
+#     arr_for_csv.append(new_list)
+
+# print(arr_for_csv[14])
+
+
+arr_for_csv = []
+
+
+
+for i in parsed[26]['data']:
     new_list = []
+    gender_arr = i['targetingsentencelines']['targetingsentencelines']
     new_list.append(i['name'])
     new_list.append(i['start_time'][0:10])
-    gender_arr = i['targetingsentencelines']['targetingsentencelines']
 
     try:
         new_list.append(i['end_time'][0:10])
@@ -84,6 +140,7 @@ for i in parsed[0]['data']:
     except KeyError:
         new_list.append('No Targeting Information')
 
+    # for gender
     try:
         if {'content': 'Gender:', 'children': ['Female']} in gender_arr:
             new_list.append('Female')
@@ -94,7 +151,9 @@ for i in parsed[0]['data']:
     except KeyError:
         new_list.append('No Gender Data Available')
 
+    # This is for the account name
     new_list.append(i['name'][0:11])
+
     try:
         new_list.append(i['insights']['data'][0]['spend'])
     except KeyError:
@@ -114,4 +173,7 @@ for i in parsed[0]['data']:
 
     arr_for_csv.append(new_list)
 
-print(arr_for_csv[2])
+print(arr_for_csv)
+
+
+
