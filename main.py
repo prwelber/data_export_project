@@ -5,8 +5,8 @@ import csv
 # Get adset targeting through acct num
 # targetingsentencelines gives more depth
 
-# Ruffino
-acct_num = 867733226610106
+act_num = 805588439491252
+act_name = 'Rex_Goliath'
 
 def get_data(act_id, act_name):
     my_access_token = 'CAAN4vFUE2ZAgBAHaZA6dmP6v4eIxOcV8TtA2crGjLG47ZCEllpjUSUlGFGDIFCX0KQrWBw8OGY9I7vi087ekgpaoldSyaya3HtIJgzC7oR2GQnpE8TfWi8uAB7LqtjMGqtgmvzFXZBTytZCkMDVm9WTC9vBqQZAuxVpj10yyQZC0WigZBaxvKfvG'
@@ -27,14 +27,14 @@ def get_data(act_id, act_name):
     json.dump(more_data, f, indent=4, separators=(',', ':'))
     print('data written to file')
 
-    more_data2 = requests.get(more_data['paging']['next']).json()
-    json.dump(more_data2, f, indent=4, separators=(',', ':'))
-    print('data written to file')
+    # more_data2 = requests.get(more_data['paging']['next']).json()
+    # json.dump(more_data2, f, indent=4, separators=(',', ':'))
+    # print('data written to file')
 
     f.close()
     return fb_data
 
-# get_data(acct_num, 'Ruffino')
+# get_data(act_num, act_name)
 
 # for a single adset
 def json_to_csv(file):
@@ -131,26 +131,44 @@ def json_to_csv(file):
 """ this is for paginated data from facebook """
 
 def paginated_json_to_csv(file):
+    name_len = len(act_name)
     f = open(file, 'r')
     arr_for_csv = []
     parsed = json.load(f)
 
-    for i in parsed[2]['data']:
+    for i in parsed[1]['data']:
         new_list = []
+        gender_arr = i['targetingsentencelines']['targetingsentencelines']
         new_list.append(i['name'])
         new_list.append(i['start_time'][0:10])
+
         try:
             new_list.append(i['end_time'][0:10])
         except KeyError:
-            new_list.append(i['insights']['data'][0]['date_stop'])
+            try:
+                new_list.append(i['insights']['data'][0]['date_stop'])
+            except KeyError:
+                new_list.append('Date Not Available')
+
         try:
             new_list.append(i['targeting'])
         except KeyError:
             new_list.append('No Targeting Information')
-        # This is for gender when it is not available
-        new_list.append('N/A')
+
+        # for gender
+        try:
+            if {'content': 'Gender:', 'children': ['Female']} in gender_arr:
+                new_list.append('Female')
+            elif {'content': 'Gender:', 'children': ['Male']} in gender_arr:
+                new_list.append('Male')
+            else:
+                new_list.append('No Gender Data')
+        except KeyError:
+            new_list.append('No Gender Data Available')
+
         # This is for the account name
-        new_list.append(i['name'][0:7])
+        new_list.append(i['name'][0:name_len])
+
         try:
             new_list.append(i['insights']['data'][0]['spend'])
         except KeyError:
@@ -170,8 +188,6 @@ def paginated_json_to_csv(file):
 
         arr_for_csv.append(new_list)
 
-
-
     # open CSV and get ready to append stuff
     with open('master.csv', 'a', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
@@ -181,4 +197,4 @@ def paginated_json_to_csv(file):
     f.close()
     return arr_for_csv
 
-# paginated_json_to_csv('Ruffino_data_pull.json')
+# paginated_json_to_csv('RexGoliath_data_pull.json')

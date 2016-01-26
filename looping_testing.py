@@ -2,7 +2,7 @@ import json
 import csv
 
 
-f = open('Ruffino_data_pull.json', 'r')
+f = open('RexGoliath_data_pull.json', 'r')
 arr_for_csv = []
 parsed = json.load(f)
 # print(parsed['data'][0]['end_time'])
@@ -45,30 +45,56 @@ parsed = json.load(f)
 """ for when json had to be put together into an array form """
 
 # first index is for big json, second index is for adset obj
-# print(parsed[0]['data'])
-# print(parsed[0]['data'][0]['start_time'])
+# print(parsed[0]['data'][20]['targetingsentencelines']['targetingsentencelines'][3]['children'][0])
+""" For grabbing the gender we will have to loop through """
+# print(parsed[0]['data'][20]['targetingsentencelines']['targetingsentencelines'])
+# arr = parsed[0]['data'][20]['targetingsentencelines']['targetingsentencelines']
+# print(arr, '\n')
+# for i in arr:
+#     print(i)
+# if {'content': 'Gender:', 'children': ['Female']} in arr:
+#     print('found it')
+
+# print(parsed[0]['data'][20]['targetingsentencelines']['targetingsentencelines'])
+
+# print(parsed[0]['data'][0]['start_time'][0:10])
+# print(parsed[0]['data'][0]['end_time'][0:10])
 # print(parsed[1]['data'][0]['name'])
-# print(parsed[2]['data'][0]['name'])
-# print(len(parsed[0]['data']))
 
 
 # for i in parsed[0]['data']:
 #     print(i['name'])
 
-for i in parsed[1]['data']:
+for i in parsed[0]['data']:
     new_list = []
     new_list.append(i['name'])
     new_list.append(i['start_time'][0:10])
+    gender_arr = i['targetingsentencelines']['targetingsentencelines']
+
     try:
         new_list.append(i['end_time'][0:10])
     except KeyError:
-        new_list.append(i['insights']['data'][0]['date_stop'])
+        try:
+            new_list.append(i['insights']['data'][0]['date_stop'])
+        except KeyError:
+            new_list.append('Date Not Available')
+
     try:
         new_list.append(i['targeting'])
     except KeyError:
         new_list.append('No Targeting Information')
-    new_list.append('N/A')
-    new_list.append(i['name'][0:7])
+
+    try:
+        if {'content': 'Gender:', 'children': ['Female']} in gender_arr:
+            new_list.append('Female')
+        elif {'content': 'Gender:', 'children': ['Male']} in gender_arr:
+            new_list.append('Male')
+        else:
+            new_list.append('No Gender Data')
+    except KeyError:
+        new_list.append('No Gender Data Available')
+
+    new_list.append(i['name'][0:11])
     try:
         new_list.append(i['insights']['data'][0]['spend'])
     except KeyError:
@@ -88,4 +114,4 @@ for i in parsed[1]['data']:
 
     arr_for_csv.append(new_list)
 
-print(arr_for_csv[9])
+print(arr_for_csv[2])
