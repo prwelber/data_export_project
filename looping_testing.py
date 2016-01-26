@@ -2,7 +2,7 @@ import json
 import csv
 
 
-f = open('Estancia_data_pull.json', 'r')
+f = open('Mark_West_DLX2016_data_pull.json', 'r')
 arr_for_csv = []
 parsed = json.load(f)
 # print(parsed['data'][0]['end_time'])
@@ -121,7 +121,7 @@ arr_for_csv = []
 
 
 
-for i in parsed[7]['data']:
+for i in parsed[1]['data']:
     new_list = []
     gender_arr = i['targetingsentencelines']['targetingsentencelines']
     new_list.append(i['name'])
@@ -173,7 +173,7 @@ for i in parsed[7]['data']:
 
     arr_for_csv.append(new_list)
 
-print(arr_for_csv[22])
+print(arr_for_csv[24])
 
 
 

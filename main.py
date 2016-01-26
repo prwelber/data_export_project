@@ -5,8 +5,8 @@ import csv
 # Get adset targeting through acct num
 # targetingsentencelines gives more depth
 
-act_num = 1381091345468800
-act_name = 'Estancia'
+act_num = 968506049866156
+act_name = 'Mark_West_DLX2016'
 
 def get_data(act_id, act_name):
     my_access_token = 'CAAN4vFUE2ZAgBAHaZA6dmP6v4eIxOcV8TtA2crGjLG47ZCEllpjUSUlGFGDIFCX0KQrWBw8OGY9I7vi087ekgpaoldSyaya3HtIJgzC7oR2GQnpE8TfWi8uAB7LqtjMGqtgmvzFXZBTytZCkMDVm9WTC9vBqQZAuxVpj10yyQZC0WigZBaxvKfvG'
@@ -18,6 +18,7 @@ def get_data(act_id, act_name):
     fb_data = requests.get(url).json()
 
     f = open('%s_data_pull.json' % act_name, 'a')
+    f.write('[\n')
 
     # put JSON into the opened file with indentation
     json.dump(fb_data, f, indent=4, separators=(',', ':'))
@@ -31,43 +32,50 @@ def get_data(act_id, act_name):
     print('json written to file')
     f.write(',\n')
 
-    more_data2 = requests.get(more_data['paging']['next']).json()
-    json.dump(more_data2, f, indent=4, separators=(',', ':'))
-    print('json written to file')
-    f.write(',\n')
-
-    more_data3 = requests.get(more_data2['paging']['next']).json()
-    json.dump(more_data3, f, indent=4, separators=(',', ':'))
-    print('json written to file')
-    f.write(',\n')
-
-    more_data4 = requests.get(more_data3['paging']['next']).json()
-    json.dump(more_data4, f, indent=4, separators=(',', ':'))
-    print('json written to file')
-    f.write(',\n')
-
-    more_data5 = requests.get(more_data4['paging']['next']).json()
-    json.dump(more_data5, f, indent=4, separators=(',', ':'))
-    print('json written to file')
-    f.write(',\n')
-
-    more_data6 = requests.get(more_data5['paging']['next']).json()
-    json.dump(more_data6, f, indent=4, separators=(',', ':'))
-    print('json written to file')
-    f.write(',\n')
-
-    more_data7 = requests.get(more_data6['paging']['next']).json()
-    json.dump(more_data7, f, indent=4, separators=(',', ':'))
-    print('json written to file')
-    f.write(',\n')
-
     try:
-        more_data8 = requests.get(more_data7['paging']['next']).json()
-        json.dump(more_data8, f, indent=4, separators=(',', ':'))
+        more_data2 = requests.get(more_data['paging']['next']).json()
+        json.dump(more_data2, f, indent=4, separators=(',', ':'))
         print('json written to file')
         f.write(',\n')
     except KeyError:
-        print('this is the end, no data8 and no more json!')
+        print('no data2 and no more json available')
+
+    # try:
+    #     more_data3 = requests.get(more_data2['paging']['next']).json()
+    #     json.dump(more_data3, f, indent=4, separators=(',', ':'))
+    #     print('json written to file')
+    #     f.write(',\n')
+    # except KeyError:
+    #     print('no data3 and no more json')
+
+
+    # more_data4 = requests.get(more_data3['paging']['next']).json()
+    # json.dump(more_data4, f, indent=4, separators=(',', ':'))
+    # print('json written to file')
+    # f.write(',\n')
+
+    # more_data5 = requests.get(more_data4['paging']['next']).json()
+    # json.dump(more_data5, f, indent=4, separators=(',', ':'))
+    # print('json written to file')
+    # f.write(',\n')
+
+    # more_data6 = requests.get(more_data5['paging']['next']).json()
+    # json.dump(more_data6, f, indent=4, separators=(',', ':'))
+    # print('json written to file')
+    # f.write(',\n')
+
+    # more_data7 = requests.get(more_data6['paging']['next']).json()
+    # json.dump(more_data7, f, indent=4, separators=(',', ':'))
+    # print('json written to file')
+    # f.write(',\n')
+
+    # try:
+    #     more_data8 = requests.get(more_data7['paging']['next']).json()
+    #     json.dump(more_data8, f, indent=4, separators=(',', ':'))
+    #     print('json written to file')
+    #     f.write(',\n')
+    # except KeyError:
+    #     print('this is the end, no data8 and no more json!')
 
     # try:
     #     more_data9 = requests.get(more_data8['paging']['next']).json()
@@ -82,59 +90,63 @@ def get_data(act_id, act_name):
     #     more_data10 = requests.get(more_data9['paging']['next']).json()
     #     json.dump(more_data10, f, indent=4, separators=(',', ':'))
     #     print('json written to file')
+    #     f.write(',\n')
     # except KeyError:
     #     print('this is the end, no data10 and no more json!')
 
+    # try:
+    #     more_data11 = requests.get(more_data10['paging']['next']).json()
+    #     json.dump(more_data11, f, indent=4, separators=(',', ':'))
+    #     print('json wrote out to file')
+    #     f.write(',\n')
+    # except KeyError:
+    #     print('no data11 and no more json')
 
-    # more_data11 = requests.get(more_data4['paging']['next']).json()
-    # json.dump(more_data11, f, indent=4, separators=(',', ':'))
-    # print('json written to file')
-
-    # more_data12 = requests.get(more_data11['paging']['next']).json()
-    # json.dump(more_data12, f, indent=4, separators=(',', ':'))
-    # print('json written to file')
+    # try:
+    #     more_data12 = requests.get(more_data11['paging']['next']).json()
+    #     json.dump(more_data12, f, indent=4, separators=(',', ':'))
+    #     print('json wrote out to file')
+    #     f.write(',\n')
+    # except KeyError:
+    #     print('no data12 and no more json')
 
     # try:
     #     more_data13 = requests.get(more_data12['paging']['next']).json()
     #     json.dump(more_data13, f, indent=4, separators=(',', ':'))
     #     print('json written to file')
+    #     f.write(',\n')
     # except KeyError:
-    #     print('KeyError means you\'re at the end')
+    #     print('no data13 and no more json')
 
+    # try:
+    #     more_data14 = requests.get(more_data13['paging']['next']).json()
+    #     json.dump(more_data14, f, indent=4, separators=(',', ':'))
+    #     print('json written to file')
+    #     f.write(',\n')
+    # except KeyError:
+    #     print('no data14 and no more json')
+
+    # try:
+    #     more_data15 = requests.get(more_data14['paging']['next']).json()
+    #     json.dump(more_data15, f, indent=4, separators=(',', ':'))
+    #     print('json written to file')
+    #     f.write(',\n')
+    # except KeyError:
+    #     print('no data15 and no more json')
+
+    # try:
+    #     more_data16 = requests.get(more_data15['paging']['next']).json()
+    #     json.dump(more_data16, f, indent=4, separators=(',', ':'))
+    #     print('json written to file')
+    #     f.write(',\n')
+    # except KeyError:
+    #     print('no data16 and no more json')
+
+    f.write(']\n')
     f.close()
     return fb_data
 
 # get_data(act_num, act_name)
-
-# for a single adset
-def json_to_csv(file):
-    f = open(file, 'r')
-    arr_for_csv = []
-    parsed = json.load(f)
-    print(parsed['data'])
-
-    for i in parsed['data']:
-        arr_for_csv.append(i['name'])
-        arr_for_csv.append(i['insights']['data'][0]['date_start'])
-        arr_for_csv.append(i['insights']['data'][0]['date_stop'])
-        arr_for_csv.append(i['targeting'])
-        arr_for_csv.append('N/A')
-        arr_for_csv.append(i['name'][0:8])
-        arr_for_csv.append('$' + str(round(i['insights']['data'][0]['spend'] * 1.15)))
-        arr_for_csv.append(i['targeting']['age_min'])
-        arr_for_csv.append(i['targeting']['age_max'])
-        arr_for_csv.append(i['targeting']['interests'])
-
-    # open CSV and get ready to append stuff
-    with open('master.csv', 'a', newline='', encoding='utf-8') as f:
-        writer = csv.writer(f)
-        writer.writerow(arr_for_csv)
-
-    f.close()
-
-# json_to_csv('Popcrush_data_pull.json')
-
-
 
 
 """ this is for paginated data from facebook """
@@ -145,7 +157,7 @@ def paginated_json_to_csv(file):
     arr_for_csv = []
     parsed = json.load(f)
 
-    for i in parsed[7]['data']:
+    for i in parsed[1]['data']:
         new_list = []
         gender_arr = i['targetingsentencelines']['targetingsentencelines']
         new_list.append(i['name'])
@@ -206,4 +218,4 @@ def paginated_json_to_csv(file):
     f.close()
     return arr_for_csv
 
-paginated_json_to_csv('Estancia_data_pull.json')
+# paginated_json_to_csv('Mark_West_DLX2016_data_pull.json')
