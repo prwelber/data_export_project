@@ -37,9 +37,11 @@ def get_data(act_id, act_name):
             break
 
     f.seek(0,2)                 # end of file
-    size=f.tell()               # the size...
+    size=f.tell()               # the size of the file
+    """ f.tell() returns an integer giving the file object’s current position in the file represented as number of bytes from the beginning of the file when in binary mode and an opaque number when in text mode.
+    """
     print('size: ', size)
-    f.truncate(size-1)          # delete byte 2 bytes from end of file
+    f.truncate(size-1)          # delete 1 from end of file
     f.write(']\n')              # write a closing bracket
     f.close()                   # close file
     return fb_data
