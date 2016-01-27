@@ -1,12 +1,13 @@
 import requests
 import json
 import csv
+import os
 
 # Get adset targeting through acct num
 # targetingsentencelines gives more depth
 
-act_num = 813429925373770
-act_name = 'Clos_du_Bois'
+act_num = 852503464799749
+act_name = 'Franciscan'
 
 def get_data(act_id, act_name):
     my_access_token = 'CAAN4vFUE2ZAgBAHaZA6dmP6v4eIxOcV8TtA2crGjLG47ZCEllpjUSUlGFGDIFCX0KQrWBw8OGY9I7vi087ekgpaoldSyaya3HtIJgzC7oR2GQnpE8TfWi8uAB7LqtjMGqtgmvzFXZBTytZCkMDVm9WTC9vBqQZAuxVpj10yyQZC0WigZBaxvKfvG'
@@ -30,16 +31,22 @@ def get_data(act_id, act_name):
             fb_data = requests.get(fb_data['paging']['next']).json()
             json.dump(fb_data, f, indent=4, separators=(',', ':'))
             print('json written in while loop')
-            f.write(',\n')
+            f.write(',')
         except KeyError:
             print('no more data')
             break
 
-    f.write(']\n')
-    f.close()
+    f.seek(0,2)                 # end of file
+    size=f.tell()               # the size...
+    print('size: ', size)
+    f.truncate(size-1)          # delete byte 2 bytes from end of file
+    f.write(']\n')              # write a closing bracket
+    f.close()                   # close file
     return fb_data
 
-# get_data(act_num, act_name)
+get_data(act_num, act_name)
+
+
 
 
 
@@ -56,6 +63,7 @@ def paginated_json_to_csv(file):
     arr_for_csv = []
     parsed = json.load(f)
     counter = 0
+    print('entering while loop')
     while True:
         try:
             for i in parsed[counter]['data']:
@@ -111,15 +119,18 @@ def paginated_json_to_csv(file):
                 arr_for_csv.append(new_list)
             counter += 1
         except IndexError:
+            print('exiting while loop')
             break
 
     # open CSV and get ready to append stuff
     with open('test.csv', 'a', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
+        print('about to write to csv')
         for i in arr_for_csv:
             writer.writerow(i)
 
+    print('csv file closing')
     f.close()
     return arr_for_csv
 
-paginated_json_to_csv('Clos_du_Bois_data_pull.json')
+paginated_json_to_csv('Franciscan_data_pull.json')
