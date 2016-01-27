@@ -2,7 +2,7 @@ import json
 import csv
 
 
-f = open('Mark_West_DLX2016_data_pull.json', 'r')
+f = open('Constlltn_Mar_Sep_14_data_pull.json', 'r')
 arr_for_csv = []
 parsed = json.load(f)
 # print(parsed['data'][0]['end_time'])
@@ -121,7 +121,7 @@ arr_for_csv = []
 
 
 
-for i in parsed[1]['data']:
+for i in parsed[0]['data']:
     new_list = []
     gender_arr = i['targetingsentencelines']['targetingsentencelines']
     new_list.append(i['name'])
@@ -152,7 +152,7 @@ for i in parsed[1]['data']:
         new_list.append('No Gender Data Available')
 
     # This is for the account name
-    new_list.append(i['name'][0:9])
+    new_list.append(i['name'][0:19])
 
     try:
         new_list.append(i['insights']['data'][0]['spend'] * 1.15)
@@ -173,7 +173,7 @@ for i in parsed[1]['data']:
 
     arr_for_csv.append(new_list)
 
-print(arr_for_csv[24])
+print(arr_for_csv)
 
 
 
