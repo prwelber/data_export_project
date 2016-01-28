@@ -6,8 +6,8 @@ import os
 # Get adset targeting through acct num
 # targetingsentencelines gives more depth
 
-act_num = 852503464799749
-act_name = 'Franciscan'
+act_num = 805588439491252
+act_name = 'Rex_Goliath'
 
 def get_data(act_id, act_name):
     my_access_token = 'CAAN4vFUE2ZAgBAHaZA6dmP6v4eIxOcV8TtA2crGjLG47ZCEllpjUSUlGFGDIFCX0KQrWBw8OGY9I7vi087ekgpaoldSyaya3HtIJgzC7oR2GQnpE8TfWi8uAB7LqtjMGqtgmvzFXZBTytZCkMDVm9WTC9vBqQZAuxVpj10yyQZC0WigZBaxvKfvG'
@@ -135,4 +135,4 @@ def paginated_json_to_csv(file):
     f.close()
     return arr_for_csv
 
-paginated_json_to_csv('Franciscan_data_pull.json')
+paginated_json_to_csv('Rex_Goliath_data_pull.json')
