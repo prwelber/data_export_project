@@ -32,10 +32,21 @@ while True:
                 except KeyError:
                     new_list.append('Date Not Available')
 
+            # try:
+            #     new_list.append(i['targeting']['geo_locations'])
+            # except KeyError:
+            #     new_list.append('No Targeting Information')
+
             try:
-                new_list.append(i['targeting'])
+                if i['targeting']['geo_locations'] == {'location_types': ['home', 'recent'], 'countries': ['US']}:
+                    new_list.append('National')
+                else:
+                    new_list.append('Geographic')
             except KeyError:
                 new_list.append('No Targeting Information')
+                print('key error happened')
+
+
 
             # for gender
             try:
@@ -63,6 +74,28 @@ while True:
                 new_list.append(i['targeting']['age_max'])
             except KeyError:
                 new_list.append('No Targeting')
+
+
+            """
+            FOR GETTING TARGETING METHODOLOGY
+            One option is to use chained gets:
+            value = myDict.get('lastName', myDict.get('firstName', myDict.get('userName')))
+            But if you have keySet defined, this might be clearer:
+            value = None
+            for key in keySet:
+                if key in myDict:
+                    value = myDict[key]
+                    break
+
+            my_dict={'account_0':123445,'seller_account':454545,'seller_account_0':454676, 'seller_account_number':3433343}
+
+            for key, value in my_dict.items():   # iter on both keys and values
+                    if key.startswith('seller_account'):
+                            print key, value
+            """
+
+
+
             try:
                 new_list.append(i['targetingsentencelines'])
             except KeyError:
@@ -75,8 +108,7 @@ while True:
         break
 
 for i in arr_for_csv:
-    print(i)
-    print('\n')
+    print(i, '\n\n')
 
 
 
