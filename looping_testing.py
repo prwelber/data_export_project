@@ -2,7 +2,7 @@ import json
 import csv
 
 
-f = open('Rex_Goliath_data_pull.json', 'r')
+f = open('ConstellationBrands_data_pull.json', 'r')
 arr_for_csv = []
 parsed = json.load(f)
 
@@ -44,7 +44,6 @@ while True:
                     new_list.append('Geographic')
             except KeyError:
                 new_list.append('No Targeting Information')
-                print('key error happened')
 
 
 
@@ -92,14 +91,39 @@ while True:
             for key, value in my_dict.items():   # iter on both keys and values
                     if key.startswith('seller_account'):
                             print key, value
+
+
+            flexible_spec --> keyword
+            friends_of_connections
+            interests --> keyword
+            custom_audence --> keyword
             """
 
-
-
             try:
-                new_list.append(i['targetingsentencelines'])
+                if i['targeting'].get('connections') != None:
+                    new_list.append('Keyword')
+                elif i['targeting'].get('flexible_spec') != None:
+                    new_list.append('Keyword')
+                elif i['targeting'].get('interests') != None:
+                    new_list.append('Keyword')
+                elif i['targeting'].get('custom_audiences') != None:
+                    new_list.append('Keyword')
+                elif i['targeting'].get('friends_of_connections') != None:
+                    new_list.append('Keyword')
+                elif i['targeting'].get('behaviors') != None:
+                    new_list.append('Behavioral')
+                elif 'dlx' in i['name'].lower():
+                    new_list.append('Purchase')
+                else:
+                    new_list.append('Demo')
             except KeyError:
-                new_list.append('No Targeting Sentence Lines')
+                new_list.append('No Methodology')
+
+
+            # try:
+            #     new_list.append(i['targetingsentencelines'])
+            # except KeyError:
+            #     new_list.append('No Targeting Sentence Lines')
 
 
             arr_for_csv.append(new_list)
