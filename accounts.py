@@ -28,34 +28,31 @@ import second_pass
 # RMPS 800317280018368
 # Robert_Mondavi Winery(RMW) 832124100171019
 
-Robert_Mondavi 832124100171019
-Rosatello 915039361879492
-Ruffino 867733226610106
-Simi 852245011492261
-Thorny_Rose 1378201735758977
+# Robert_Mondavi 832124100171019
+# Rosatello 915039361879492
+# Ruffino 867733226610106
+# Simi 852245011492261
+# Thorny_Rose 1378201735758977
 
-Toasted_Head 714007831982647
-Tom_Gore 903219059728189
-Wine_Social_Content_Marketing (905853179464777)
-Woodbridge 800317096685053
-Catch_All 108294695945331
+# Toasted_Head 714007831982647
+# Tom_Gore 903219059728189
+# Wine_Social_Content_Marketing (905853179464777)
+# Woodbridge 800317096685053
+# Constellation_Catch_All 108294695945331
 
 SVEDKA 886755114707917
 Milestone 843446492372113
 '''
 
 accounts_arr = [
-    ['Robert_Mondavi', 832124100171019],
-    ['Rosatello', 915039361879492],
-    ['Ruffino', 867733226610106],
-    ['Simi', 852245011492261],
-    ['Thorny_Rose', 1378201735758977],
+    ['SVEDKA', 886755114707917],
+    ['Milestone', 843446492372113],
 ]
 for i in accounts_arr:
     second_pass.get_data(i[1], i[0])
 
-# for i in accounts_arr:
-#     second_pass.paginated_json_to_csv(i[0] + '_data_pull.json')
+for i in accounts_arr:
+    second_pass.paginated_json_to_csv(i[0] + '_data_pull.json')
 
 
 

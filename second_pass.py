@@ -19,7 +19,7 @@ def get_data(act_id, act_name):
     fb_data = requests.get(url).json()
     json.dump(fb_data, f, indent=4, separators=(',', ':'))
     print('json written to file')
-    f.write(',\n')
+    f.write(',')
 
     """ big improvement over the last version. key here is we are assigning the request to the same variable, and then checking that newly updated varibale each time for the [paging][next] data point. if it's not there, we will get a KeyError. """
 
