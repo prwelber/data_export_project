@@ -40,8 +40,8 @@ import second_pass
 # Woodbridge 800317096685053
 # Constellation_Catch_All 108294695945331
 
-SVEDKA 886755114707917
-Milestone 843446492372113
+# SVEDKA 886755114707917
+# Milestone 843446492372113
 '''
 
 accounts_arr = [
