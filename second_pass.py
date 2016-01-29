@@ -31,7 +31,6 @@ def get_data(act_id, act_name):
             f.write(',')
         except KeyError:
             print('no more data')
-            time.sleep(.25)
             break
 
     f.seek(0,2)                 # end of file
@@ -40,7 +39,6 @@ def get_data(act_id, act_name):
     """
     print('size: ', size)
     f.truncate(size-1)          # delete 1 from end of file
-    time.sleep(.25)
     f.write(']\n')              # write a closing bracket
     f.close()                   # close file
     return fb_data
