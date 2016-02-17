@@ -10,6 +10,12 @@ import second_pass
 # Constellation_Brands (retargeting, trade, walgreens) 728442737205823
 # Dreaming_Tree 833425423374220
 
+['Arbor_Mist', 800316826685080],
+['Black_Box', 1380947658816783],
+['Clos_du_Bois', 813429925373770],
+['Constellation_Brands', 728442737205823],
+['Dreaming_Tree', 833425423374220],
+
 # Estancia 1381091345468800
 # Franciscan 852503464799749
 # Kim_Crawford 807247179325378
